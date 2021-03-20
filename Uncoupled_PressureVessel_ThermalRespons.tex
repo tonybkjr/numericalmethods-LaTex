@@ -16,13 +16,13 @@ T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 
 \begin{document}
 
-\runningheads{T.~Martin}{One-Dimensional Uncoupled Thermoelastic Response of Spherical Pressure Vessel}
+\runningheads{T.~Martin}{One-Dimensional Uncoupled Thermo-elastic Response of Spherical Pressure Vessel}
 %\runningheads{T.~Martin}{A demonstration of the \journalabb\
 %class file}
 
 %\title{A demonstration of the \LaTeXe\ class file for the
 %\itshape{\journalnamelc}\footnotemark[2]}
-\title{One-Dimensional Uncoupled Thermoelastic Response of a Spherical Pressure Vessel to an Internal Wall Heat Source}
+\title{One-Dimensional Uncoupled Thermo-elastic Response of a Spherical Pressure Vessel to an Internal Wall Heat Source}
 \author{Tony Martin\corrauth\affil{1}}
 
 \address{John Wiley \& Sons, Ltd, The Atrium, Southern Gate, Chichester,
@@ -32,13 +32,13 @@ West Sussex, PO19~8SQ, UK}
 The Atrium, Southern Gate, Chichester, West Sussex, PO19~8SQ, UK.}
 
 \begin{abstract}
-This paper describes the procedure for numerically analyzing the thermal and mechanical response of a spherical pressure vessel to an increase in temperature on the inner surface. The pressure vessel is subject to a heat source at the inner surface, and at some time the temperature is increased according to some function. The increase in temperature result in expansion of the two materials that make up the pressure vessel wall. This type of analysis is also known as a thermoelastic analysis (or uncoupled thermoelasticity), where thermal effects within the material enter the material as a body force. It was seen that through finite differencing methods, this analysis can be readily accomplished for any material.  
+This paper describes the procedure for numerically analyzing the thermal and mechanical response of a spherical pressure vessel to an increase in temperature on the inner surface. The pressure vessel is subject to a heat source at the inner surface, and at some time the temperature is increased according to some function. The increase in temperature results in expansion of the two materials that make up the pressure vessel wall. This type of analysis is also known as a therm-oelastic analysis (or uncoupled thermo-elasticity), where thermal effects within the material enter the material as a body force. It was seen that through finite differencing methods, this analysis can be readily accomplished for any material.  
 %This paper describes the use of the \LaTeXe\
 %\textsf{\journalclass} class file for setting papers for the
 %\emph{\journalnamelc}.
 \end{abstract}
 
-\keywords{Heat Diffusion, Radial Stress, Hoop Stress, Thermoelasticity; \LaTeXe; \emph{\journalabb}}
+\keywords{Heat Diffusion, Radial Stress, Hoop Stress, Thermo-elasticity; \LaTeXe; \emph{\journalabb}}
 
 \maketitle
 
@@ -51,7 +51,7 @@ available from the NME Home Page at\\
 
 \section{Introduction}
 \vspace{-2pt}
-The one-dimensional heat equation for spherical coordinates is used to calculate the thermal response of a spherical pressure vessel to a heat source located at the inner surface. The one-dimensional displacement equation is also used to determine the displacements throughout the vessel, along with the resulting radial and Hoop stresses. The analysis is done by implementing finite difference techniques. For the thermal solution, an implicit method is used, where the current temperature can only be solved using the temperature at from the previous time step. This results in a system of linear equations that can only be solved by inverting matrices. Matlab is utilized to implement these finite difference methods and invert the matrices to converge to a solution. Throughout the analysis, either centered differencing, forward differencing, or backwards differencing was used; all second order accurate schemes. More information regarding these schemes will be discussed in the theory and results sections. 
+The one-dimensional heat equation for spherical coordinates is used to calculate the thermal response of a spherical pressure vessel to a heat source located at the inner surface. The one-dimensional displacement equation is also used to determine the displacements throughout the vessel, along with the resulting radial and Hoop stresses. The analysis is done by implementing finite difference techniques. For the thermal solution, an implicit method is used, where the current temperature can only be solved using the temperature from the previous time-step. This results in a system of linear equations that can only be solved by inverting matrices. MATLAB is utilized to implement these finite difference methods and invert the matrices to converge to a solution. Throughout the analysis, either centered differencing, forward differencing, or backwards differencing was used; all second order accurate schemes. More information regarding these schemes will be discussed in the theory and results sections. 
 
 \vspace{-6pt}
 
